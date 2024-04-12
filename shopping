@@ -1,0 +1,56 @@
+class ItemToPurchase:
+    def __init__(self, name, price, quantity):
+        self.name = name
+        self.price = price
+        self.__quantity = quantity
+
+    def get_quantity(self):
+        return self.__quantity
+
+    def set_quantity(self):
+        #changes value of quantity attribute
+        
+
+    def __str__(self, name, price, quantity):
+        self.name = name
+        self.price = price
+        self.__quantity = quantity
+        total_price = quantity * price
+        return total_price
+    
+def class ShoppingCart: 
+    def __init__Cart(self,customer_ID, cart_items):
+              self.customer_ID = customer_ID
+              self.cart_items = cart_items
+              cart_items = []
+
+    def add_item(self, ItemToPurchase):
+        cart_items.append(self.ItemToPurchase) #is this the class or the item? 
+        
+    def remove_item(self, ItemToPurchase):
+        cart_items.remove(self.ItemToPurchase) #is this the class or the item? 
+
+    def change_quantity(self, ItemToPurchase, new_quantity): #how does it know which quantity?
+        for self.quantity in ItemToPurchase:
+            if self.quantity != new_quantity:
+                self.quantity == new_quantity
+
+    def print_cart(self):
+        print(f"Shopping Cart for Customer: {self.customer_ID}\n {self.name}: {self.quantity} @ {self.price} = ${total_price}")
+        print("TOTAL: " sum(total_price)) #how to add indiviudals
+        
+        
+
+def main():
+    item1 = ItemToPurchase('Potato Chips', 3.49, 1) #change quantity to 2
+    item2 = ItemToPurchase('Soda', 1.50, 1)
+   # print(f"{item1.name}: {item1.quantity} @ {item1.price} = {total_price}")
+   # print(f"{item2.name}: {item2.quantity} @ {item2.price} = {total_price}")
+
+   cart = ShoppingCart(987654, #items to purchase objects)
+   print(f"Shopping Cart for Customer: {self.customer_ID}\n {self.name}: {self.quantity} @ {self.price} = ${total_price}")
+
+
+if __name__ == '__main__':
+                       main()
+    
