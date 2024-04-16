@@ -1,0 +1,12 @@
+   def __str__(self, name, price, quantity):
+        self.name = name
+        self.price = price
+        self.__quantity = quantity
+        total_price = quantity * price
+        return total_price
+        for total_price in __str__:
+            total_price+= total_price
+            return total_price
+
+
+
